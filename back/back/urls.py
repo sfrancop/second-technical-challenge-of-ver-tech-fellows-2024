@@ -15,10 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from international_education_analyzer.views import BigQueryData
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', BigQueryData.as_view()),
+    path('queries/', include('international_education_analyzer.urls')),
 ]

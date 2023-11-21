@@ -6,3 +6,6 @@ class Query(models.Model):
     username = models.CharField(max_length=200)
     comment = models.CharField(max_length=2000)
     query = models.TextField(max_length=2000)
+    
+    def __str__(self):
+        return self.name

@@ -1,15 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .serializer import QuerySerializer
+from .models import Query
 
-# Create your views here.
-from rest_framework.response import Response
-from rest_framework.views import APIView
-from google.cloud import bigquery
-
-class BigQueryData(APIView):
-    def post(self, request):
-        query = request.data.get('query')
-        client = bigquery.Client()
-        query_job = client.query(query)
-        data = [{"name": row[0], "total_people": row["total_people"]} for row in query_job]
-        return Response(data)
+class QueryView(viewsets.ModelViewSet):
+    queryset = Query.objects.all()
+    serializer_class = QuerySerializer
     
