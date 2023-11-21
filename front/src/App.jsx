@@ -7,9 +7,9 @@ import QueriesProvider from './context/QueriesContext'
 function App() {
   return (
     <QueriesProvider>
-      <div className='bg-primary h-fit p-20'>
-        <header className=' bg-white mb-10 py-2 text-center rounded-2xl font-Comfortaa'>
-          <p className='text-[30px] font-bold text-black'>International Education Analyzer</p>
+      <div className='bg-white h-fit p-20'>
+        <header className=' bg-gradient-to-l from-black text-white to-secondary mb-10 py-2 text-center rounded-2xl font-Comfortaa'>
+          <p className='text-[30px] font-bold  '>International Education Analyzer</p>
           <p>This application works to specifically analyze the uneducated population</p>
         </header>
         <div className="flex gap-5">

@@ -21,8 +21,8 @@ function QuerieInfo(props) {
       <br/>
 
       <div className="flex gap-4">
-        <button className='bg-secondary text-white px-4 py-1 h-screend rounded font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:text-[#ffffff]'>Use</button>
-        <button className='bg-secondary text-white px-4 py-1 h-screend rounded font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:text-[#ffffff]'>Comment</button>
+        <button className='bg-secondary text-white px-4 py-1 h-screend rounded font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:text-primary'>Use</button>
+        <button className='bg-secondary text-white px-4 py-1 h-screend rounded font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:text-primary'>Comment</button>
       </div>
 
     </div>
