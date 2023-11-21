@@ -15,6 +15,7 @@ class BigQueryData(APIView):
         query = request.data.get('query')
         client = bigquery.Client()
         query = """""" + Query.objects.order_by('-id').first().query
+        print(query)
         query_job = client.query(query)  
         data = [{"info": row} for row in query_job]
         return Response(data)
