@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from international_education_analyzer.views import BigQueryData
 
 urlpatterns = [
+    path('', BigQueryData.as_view()),
     path('admin/', admin.site.urls),
     path('queries/', include('international_education_analyzer.urls')),
+    
 ]
