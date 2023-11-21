@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { postQuery } from '../api/queryApi';
 import QuriesHistory from './QuriesHistory';
+import { QueriesContext } from '../context/QueriesContext';
 
 function QuerieForm() {
+
+  const { queries, loadQueries } = useContext(QueriesContext);
 
   const { register, handleSubmit } = useForm();
   const onSubmit = handleSubmit(
     async data => {
-      console.log(data);
-      const res = await postQuery(data);
-      console.log(res);
+      await postQuery(data);
+      loadQueries();
     }
   );
 

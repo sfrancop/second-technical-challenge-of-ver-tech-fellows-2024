@@ -1,21 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext} from 'react'
 import QuerieInfo from './QuerieInfo'
 import { getQueries } from '../api/queryApi'
+import { QueriesContext } from '../context/QueriesContext'
 
 function QuriesHistory() {
 
-  const [queries, setQueries] = useState([]);
-
-  useEffect(() => {
-
-    async function loadQueries() {
-      const queries = await getQueries();
-      console.log(queries);
-      setQueries(queries.data);
-    }
-    loadQueries();
-
-  }, []);
+  const { queries } = useContext(QueriesContext);
 
   return (
     <div className='gap-6 max-h-[600px] overflow-scroll flex flex-col'>
