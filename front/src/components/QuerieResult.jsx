@@ -54,7 +54,7 @@ function QuerieResult() {
     return (
       <ResponsiveContainer className="bg-slate-300 overflow-scroll" width="100%" height="100%">
 
-<p className='text-[20px] font-bold text-white bg-gradient-to-br from-primary to-secondary text-center'>Last query result</p>
+<p className='text-[20px] font-bold text-white bg-primary text-center'>Last query result</p>
 
         <BarChart
           width={500}

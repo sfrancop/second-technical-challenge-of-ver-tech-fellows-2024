@@ -13,7 +13,7 @@ export const getResult = () => {
 }
 
 export const putQuery = (id, query) => {
-    return axios.put('http://localhost:8000/queries/api/v1/queries/' + id, query);
+    return axios.put('http://localhost:8000/queries/api/v1/queries/' + id + "/", query);
 }
 
 
