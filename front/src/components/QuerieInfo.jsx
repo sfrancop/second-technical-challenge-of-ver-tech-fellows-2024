@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function QuerieInfo(props) {
+  const navigate = useNavigate();
   return (
     <div>
 
@@ -13,7 +15,7 @@ function QuerieInfo(props) {
       <br/>
 
       <p className='font-bold text-xl'>Comments:</p>
-      <p>gio: {props.comment}</p>
+      {props.comment}
       <br/>
 
       <p className='font-bold text-xl'>Query:</p>
@@ -22,7 +24,7 @@ function QuerieInfo(props) {
 
       <div className="flex gap-4">
         <button className='bg-secondary text-white px-4 py-1 h-screend rounded font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:text-primary'>Use</button>
-        <button className='bg-secondary text-white px-4 py-1 h-screend rounded font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:text-primary'>Comment</button>
+        <button onClick={() => {navigate("/query/"+props.id)}} className='bg-secondary text-white px-4 py-1 h-screend rounded font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:text-primary'>Comment</button>
       </div>
 
     </div>

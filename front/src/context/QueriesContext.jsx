@@ -12,10 +12,8 @@ function QueriesProvider({children}) {
 
     async function loadQueries() {
         const queries = await getQueries();
-        console.log(queries);
         setQueries(queries.data);
         const result = await getResult();
-        console.log(result);
         setResult(result.data);
       }
     useEffect(() => {

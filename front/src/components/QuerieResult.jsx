@@ -50,7 +50,6 @@ const data = [
 
 function QuerieResult() {
   const { result } = useContext(QueriesContext);
-  console.log(result);
   if (result.length > 0) {
     return (
       <ResponsiveContainer className="bg-white overflow-scroll" width="100%" height="100%">

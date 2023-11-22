@@ -14,7 +14,7 @@ function QuriesHistory() {
         query => (
             <div className='bg-white p-6 rounded-2xl font-Comfortaa'>
               <QuerieInfo
-                key={query.id}
+                id={query.id}
                 name={query.name}
                 username={query.username}
                 comment={query.comment}

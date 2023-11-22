@@ -11,3 +11,12 @@ export const postQuery = (Query) => {
 export const getResult = () => {
     return axios.get('http://localhost:8000/');
 }
+
+export const putQuery = (id, query) => {
+    return axios.put('http://localhost:8000/queries/api/v1/queries/' + id, query);
+}
+
+
+export const getQuery = (id) => {
+    return axios.get('http://localhost:8000/queries/api/v1/queries/'+id);
+}
