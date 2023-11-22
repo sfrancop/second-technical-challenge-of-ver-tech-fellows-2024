@@ -26,7 +26,7 @@ function Login() {
                 <form onSubmit={onSubmit} className='flex flex-col gap-4 items-center w-3/5'>
                 <input {...register("username")} name='username' required className='transition-[border] duration-[250ms] bg-white border-b-[3px] rounded-[3px] border-black focus:outline-none focus:border-secondary w-full px-8 text-center font-Comfortaa h-12' type="text" placeholder="User name"/>
                 <input {...register("password")} name='password' required className='mb-6 transition-[border] duration-[250ms] bg-white border-b-[3px] rounded-[3px] border-black focus:outline-none focus:border-secondary w-full px-8 text-center font-Comfortaa h-12' type="password" placeholder="Password"/>
-                <button className='bg-black text-white px-4 py-1 h-screend rounded font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:text-primary' >Run Query</button>
+                <button className='bg-black text-white px-4 py-1 h-screend rounded font-bold transition duration-500 ease-in-out transform hover:-translate-y-1 hover:text-primary' >Log in</button>
                 <p className=' font-Comfortaa text-lg text-black text-center'>Don't have an account? <Link className='transition-[color] duration-[250ms] hover:text-primary text-black' to='/signup'><b>Sign up</b></Link></p>
                 </form>
             </div>

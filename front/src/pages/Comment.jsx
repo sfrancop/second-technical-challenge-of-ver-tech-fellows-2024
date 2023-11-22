@@ -18,7 +18,7 @@ function Comment() {
       async data => {
         let actualQuery = await getQuery(params.id)
         actualQuery = actualQuery.data
-        actualQuery['comment'] = actualQuery.comment + user+":"+data.comment+" - "
+        actualQuery['comment'] = " " + actualQuery.comment + user+":"+data.comment+" - "
         putQuery(params.id, actualQuery)
         loadQueries()
         navigate('/analyzer')
