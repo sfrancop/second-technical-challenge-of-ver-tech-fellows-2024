@@ -1,1 +1,0 @@
-# second-technical-challenge-of-ver-tech-fellows-2024

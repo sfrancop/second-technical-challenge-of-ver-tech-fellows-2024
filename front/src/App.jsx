@@ -7,8 +7,9 @@ import QueriesProvider from './context/QueriesContext';
 import UserProvider from './context/UserContext';
 
 function App() {
+  console.log("Aaah curiocillo")
   return (
-    <div className='bg-white h-fit p-20'>
+    <div>
       <QueriesProvider>
         <UserProvider>
           <BrowserRouter>
