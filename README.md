@@ -21,4 +21,8 @@ For each query in the query history two buttons: Use and Comment. The first butt
 
 ![Alt text](image-5.png)
 
+## 4. Charge tests
+
+https://youtu.be/ZmNM7Xjc8JA
+
 ## Have a good analyzing!
